@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="#2196F3">
+
+
+    <RelativeLayout
+            android:layout_width="392dp"
+            android:layout_height="119dp"
+            android:padding="10dp">
+
+        <TextView
+                android:id="@+id/liftName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="test"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+        <TextView
+                android:id="@+id/liftSets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/liftName"
+                android:layout_marginStart="20dp"
+                android:text="TextView"
+                android:backgroundTint="#000000" />
+
+        <TextView
+                android:id="@+id/liftReps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/liftSets"
+                android:layout_marginStart="20dp"
+                android:text="TextView" />
+
+        <TextView
+                android:id="@+id/liftWeights"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/liftReps"
+                android:layout_marginStart="20dp"
+                android:text="TextView" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

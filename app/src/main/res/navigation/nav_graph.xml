@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/navigation"
+        app:startDestination="@id/titleFragment">
+
+    <fragment
+            android:id="@+id/titleFragment"
+            android:name="project.st991570719.rob.st991444103.sean.TitleFragment"
+            android:label="fragment_title"
+            tools:layout="@layout/fragment_title" >
+        <action
+                android:id="@+id/action_titleFragment_to_menuFragment"
+                app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/menuFragment"
+            android:name="project.st991570719.rob.st991444103.sean.MenuFragment"
+            android:label="fragment_menu"
+            tools:layout="@layout/fragment_menu" >
+        <action
+                android:id="@+id/action_menuFragment_to_workoutLogFragment"
+                app:destination="@id/workoutLogFragment" />
+        <action
+                android:id="@+id/action_menuFragment_to_FoodLogFragment"
+                app:destination="@id/foodLogFragment" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/addWorkoutFragment"
+            android:name="project.st991570719.rob.st991444103.sean.workouttracker.AddWorkoutFragment"
+            android:label="AddWorkoutFragment" />
+    <fragment
+            android:id="@+id/workoutLogFragment"
+            android:name="project.st991570719.rob.st991444103.sean.workouttracker.WorkoutLogFragment"
+            android:label="fragment_workout_log"
+            tools:layout="@layout/fragment_workout_log" >
+        <action
+                android:id="@+id/action_workoutLogFragment_to_addWorkoutFragment"
+                app:destination="@id/addWorkoutFragment" />
+        <action
+                android:id="@+id/action_workoutLogFragment_to_WorkoutWebFragment"
+                app:destination="@id/WorkoutWebFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/WorkoutWebFragment"
+            android:name="project.st991570719.rob.st991444103.sean.workouttracker.WorkoutWebFragment"
+            android:label="WorkoutWebFragment"
+            tools:layout="@layout/fragment_food_log">
+    </fragment>
+    <fragment
+            android:id="@+id/foodLogFragment"
+            android:name="project.st991570719.rob.st991444103.sean.diettracker.FoodLogFragment"
+            android:label="FoodLogFragment"
+            tools:layout="@layout/fragment_food_log">
+        <action
+                android:id="@+id/action_menuFragment_to_addFoodFragment"
+                app:destination="@id/addFoodFragment" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/addFoodFragment"
+            android:name="project.st991570719.rob.st991444103.sean.diettracker.AddFoodFragment"
+            android:label="AddFoodFragment"
+            tools:layout="@layout/fragment_food_log">
+
+    </fragment>
+</navigation>
+
